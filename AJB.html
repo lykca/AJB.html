@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BEAUTIFUL BEACHES IN TUKURAN</title>
+  <style>
+    :root {
+      --primary-color: #c47aff; /* pastel purple */
+      --secondary-color: #ffb6c1; /* light pink */
+      --background: #fff7fb; /* very light pink */
+      --card-bg: #ffffff;
+      --text-color: #4a4a6a; /* muted dark blue */
+      --shadow: 0 6px 15px rgba(196, 122, 255, 0.2);
+      --detail-bg: #f9e7ff; /* soft lilac */
+      --detail-text-color: #9f6ade;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--background);
+      color: var(--text-color);
+    }
+
+    header {
+      background: var(--primary-color);
+      padding: 24px;
+      text-align: center;
+      color: white;
+      box-shadow: var(--shadow);
+      font-weight: 700;
+      letter-spacing: 1.1px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 24px;
+    }
+
+    .details-section {
+      background: var(--detail-bg);
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+      padding: 25px 30px;
+      margin-bottom: 50px;
+      border: 2px solid var(--secondary-color);
+    }
+
+    .details-section h3 {
+      color: var(--primary-color);
+      margin-bottom: 22px;
+      font-size: 1.7rem;
+      font-weight: 800;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      letter-spacing: 1.2px;
+    }
+
+    .details-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      max-width: 720px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 22px;
+    }
+
+    .details-list li {
+      background: #fff0f6;
+      border-radius: 12px;
+      padding: 18px 25px;
+      box-shadow: 0 3px 10px rgba(255, 182, 193, 0.25);
+      font-weight: 600;
+      color: var(--detail-text-color);
+      text-align: center;
+      font-size: 1.05rem;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      transition: background-color 0.3s ease;
+      cursor: default;
+    }
+
+    .details-list li:hover {
+      background-color: #ffd1dc;
+      color: #7a3a65;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .media-wrapper {
+      background: var(--card-bg);
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .media-wrapper:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(196, 122, 255, 0.35);
+    }
+
+    img, video {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+      border-radius: 16px 16px 0 0;
+      background: #fce4ff;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>BEAUTIFUL BEACHES IN TUKURAN</h1>
+  </header>
+
+  <div class="container">
+
+    <section class="details-section">
+      <h3>Contact/Information</h3>
+      <ul class="details-list">
+       <li>AJ BEACH</li>
+       <li>TIME TO CLOSE: 10 PM</li>
+       <li>CONTACT:09541682118</li>
+       <li>COTTAGE REGULAR PRICE:</li>
+       <li>500 EACH COTTAGE OVERNIGHT OR NOT</li>
+       <li>DECEMBER TO JANUARY PRICE</li>
+     <li>1K EACH COTTAGE OVERNIGHT OR NOT</li>
+      </ul>
+    </section>
+
+    <section class="gallery">
+
+      <div class="media-wrapper">
+        <img src="image.jpg" alt="Beach Sunset" />
+      </div>
+
+      <div class="media-wrapper">
+        <img src="image2.jpg" alt="Morning Walk" />
+      </div>
+
+      <div class="media-wrapper">
+        <img src="image3.jpg" alt="City Nightlife" />
+      </div>
+
+      <div class="media-wrapper">
+        <img src="image4.jpg" alt="Spring Bloom" />
+      </div>
+
+      <div class="media-wrapper">
+        <video controls>
+          <source src="AJ.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+    </section>
+
+  </div>
+
+</body>
+</html>
